@@ -1,0 +1,22 @@
+php:
+  repository: "akarendra835/laravel-kubernetes"
+  tag: "latest"
+  fpmEnabled: false
+  envVars:
+    - name: APP_ENV
+      value: production
+    - name: APP_DEBUG
+      value: false
+    - name: DB_PORT
+      value: 3306
+    - name: DB_HOST
+      value: localhost
+# https://www.digitalocean.com/community/tutorials/how-to-deploy-laravel-7-and-mysql-on-kubernetes-using-helm
+# Use Ingress Controller
+# Enable If Using Ingress Controller
+# service:
+#   type: ClusterIP
+#   HTTPPort: 80
+# ingress:
+#   enabled: true
+#   domain: your_domain
