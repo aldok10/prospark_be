@@ -15,6 +15,7 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\ProductResource
      */
     public function index(Request $request)
