@@ -20,7 +20,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::paginate($request->per_page ?? 5);
+        $products = Product::paginate((int) $request->per_page ?? 5);
         return new ProductResource($products);
     }
 
